@@ -26,6 +26,12 @@ public class App {
                     Integer id = sc.nextInt();
                     deletar(id);
                     break;
+                case 4:
+                    mostrar();
+                    System.out.println("digite o id a ser editado");
+                    Integer id2 = cs.nextInt();
+                    editar(id2);
+                    break;
             }
         }
     }
@@ -60,4 +66,31 @@ public class App {
         Aluno aluno = alunos.get(id);
         alunos.remove(aluno);
     }
+
+    public static void editar(Integer id){
+        Scanner sc = Scanner(System.in);
+        Scanner sc2 = Scanner(System.in);
+        Aluno.out.println("O nome do aluno é" + aluno.getNome()+" digite 1 para editar:");
+        Integer opcao = sc.nextInt();
+        if(opcao == 1){
+            System.out.println("Digite o novo nome:");
+            aluno.setNome(sc2.nextLine());  
+        }
+        System.out.println("A idade do aluno é" + aluno.getIdade()+" digite 1 para editar:");
+        opcao = sc.nextInt();
+         if(opcao == 1){
+             System.out.println("Digite a nova idade:");
+             aluno.setNome(sc.nextLine());  
+         }
+        System.out.println("O curso do aluno é" + aluno.getIdade()+" digite 1 para editar:");
+        opcao = sc.nextInt();
+         if(opcao == 1){
+             System.out.println("Digite o novo curso:");
+             aluno.setNome(sc.nextLine());  
+        }
+        System.out.println("A turma do aluno é" + aluno.getIdade()+" digite 1 para editar:");
+        opcao = sc.nextInt();
+         if(opcao == 1){
+             System.out.println("Digite a nova turmo:");
+             aluno.setNome(sc.nextLine());  
 }
