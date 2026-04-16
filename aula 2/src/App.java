@@ -41,7 +41,7 @@ public class App {
                     int idEdit = sc.nextInt();
                     editar(idEdit);
                     break;
-                case 6:
+                case 5:
                     System.out.println("Encerrando...");
                     break;
                 default:
