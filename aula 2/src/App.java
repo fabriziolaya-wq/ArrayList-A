@@ -105,6 +105,19 @@ public class App {
      }
     
     }
-
-   
+    public static void filtrarPorNome(){    
+        Scanner sc = new Scanner(System.in);
+        String nome;
+        System.out.println("Digite o nome a ser filtrado: ");
+        nome = sc.nextLine();
+        for(Aluno individuo : alunos){
+            if(individuo.getNome().contains(nome)){
+                System.out.println("Nome: "+individuo.getNome());
+                System.out.println("Turma: "+individuo.getTurma());
+                System.out.println("----------------------");
+            }
+        }
+        
+    }
 }
+   
