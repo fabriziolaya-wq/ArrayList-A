@@ -32,10 +32,8 @@ public class App {
                     editar(id2);
                     break;
                 case 5:
-                    System.out.println("Encerrando...");
+                    filtrarPorNome();
                     break;
-                default:
-                    System.out.println("opção invalida!");
 
             }
         }
