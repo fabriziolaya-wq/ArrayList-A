@@ -17,7 +17,7 @@ public class App {
             System.out.println("2 - Mostrar alunos");
             System.out.println("3 - Deletar aluno");
             System.out.println("4 - Editar aluno");
-            System.out.println("6 - Sair");
+            System.out.println("5 - Sair");
             System.out.print("Escolha: ");
 
             opcao = sc.nextInt();
